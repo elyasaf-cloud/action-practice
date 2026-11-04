@@ -1,0 +1,10 @@
+services:
+  dev:
+    image: elyasaf1/banana-dev:latest
+    ports:
+      - "3000:8080"
+
+  prod:
+    image: elyasaf1/banana-prod:latest
+    ports:
+      - "4000:8080"
