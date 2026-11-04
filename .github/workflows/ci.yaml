@@ -39,7 +39,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v7
         with:
-          context: .
           push: true
           tags: |
             ${{ vars.IMAGE_NAME }}-${{ vars.ENV_NAME }}:latest
