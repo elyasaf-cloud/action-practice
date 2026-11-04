@@ -23,7 +23,7 @@ class CicdPracticeApplicationTests {
     @DisplayName("Sanity test: 4 == 4")
     void testSanityCalculation() {
         int expected = 4;
-        int actual = 2 + 3;
+        int actual = 2 + 2;
         assertEquals(expected, actual, "2 + 2 must equal 4");
     }
 
