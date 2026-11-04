@@ -1,10 +1,14 @@
 services:
   dev:
     image: elyasaf1/banana-dev:latest
+    pull_policy: always
+    restart: unless-stopped
     ports:
       - "3000:8080"
 
   prod:
     image: elyasaf1/banana-prod:latest
+    pull_policy: always
+    restart: unless-stopped
     ports:
       - "4000:8080"
